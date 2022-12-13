@@ -1,0 +1,3 @@
+# Analyzing the Default App
+
+The Flutter default app ships with the basic components like the AppBar, MaterialApp, FloatingActionButton and so on...
