@@ -24,3 +24,33 @@ class Question extends StatelessWidget {
 }
 ```
 In the code above, the "Container" widget (which is similar to the HTML's *div*) has the property "width" set to *`double.infinity`*, meaning that it will fullfil all the horizontal space available. It also has a margin property set for all the sides with an instance of *`EdgeInsets`*. Also, the "*Text*" widget - child of the "*Container*" widget has a style defined in the "style" attribute.
+
+The created widget is passed to the entrypoint like the syntax below:
+```dart
+Widget build(BuildContext context) {
+  return MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text("My First App"),
+      ),
+      body: Column(
+        children: [
+          Question(questionText: questions[questionIndex]), // <- The widget
+          ElevatedButton(
+            onPressed: answerQuestion,
+            child: const Text("Answer 1"),
+          ),
+          ElevatedButton(
+            onPressed: answerQuestion,
+            child: const Text("Answer 2"),
+          ),
+          ElevatedButton(
+            onPressed: answerQuestion,
+            child: const Text("Answer 3"),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+```
