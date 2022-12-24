@@ -51,3 +51,15 @@ As the name implies, it's used to display image.
 
 ### The **Icon** widget
 It's used to display icons. These icons behave like a SVG.
+
+## User Input
+The following widgets help us deal with user input.
+
+### The **TextField** widget
+An input where text can be inserted.
+
+### The **TextButton** and the **ElevatedButton**
+Both work the same as a normal button, with differences in styles.
+
+### The **GestureDetector** and the **InkWell**
+Deal with user screen touch events, such as: a tap, a double tap, a long tap, and so on...
